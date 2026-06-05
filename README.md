@@ -24,7 +24,7 @@ PL:
   * **Analiza modeli nieliniowych:** Testowanie zaawansowanych funkcji eksponencjalnych w OriginPro (m.in. jednofazowego zaniku `ExpDecay1` oraz dwufazowego `ExpDec2`) i zestawienie ich z podstawową linią trendu logarytmicznego w Excelu.
   * **Weryfikacja formatów graficznych:** Analiza porównawcza przydatności eksportu wykresów do formatów rastrowych (PNG) oraz skalowalnych formatów wektorowych (EMF) pod kątem zachowania ostrości i estetyki dokumentacji technicznej.
 * **Wyniki:** Wykazano przewagę dedykowanych narzędzi OriginPro w analizie nieliniowej, gdzie model biexponential (`ExpDec2`) pozwolił na uzyskanie idealnego dopasowania ($R^2 = 1.0$), podczas gdy uproszczony model logarytmiczny z Excela osiągnął wynik $R^2 = 0.98$.
-* **Wykorzystane narzędzia:** OriginPro (Polynomial Fit, Non-linear Curve Fitting), MS Excel, LaTeX (skład raportu)[cite: 3].
+* **Wykorzystane narzędzia:** OriginPro (Polynomial Fit, Non-linear Curve Fitting), MS Excel, LaTeX (skład raportu).
 * **Pliki:** `[Zobacz pełny raport PDF](Analiza-Spektroskopowa/BorodijukOtylia1.pdf)`
 
 ### Analiza Danych Spektroskopowych – Dekonwolucja Widma Układu Wieloskładnikowego
