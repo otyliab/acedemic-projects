@@ -2,7 +2,15 @@
 Wybrane raporty techniczne oraz skrypty analityczne zrealizowane w ramach studiów inżynierii biomedycznej.; 
 Selected technical reports and analytical scripts developed during biomedical engineering studies.
 
-PL:
+---
+
+### Language / Język
+* [Kliknij tutaj, aby przeczytać opis po polsku](#-wersja-polska)
+* [Click here to read the description in English](#-english-version)
+
+---
+
+## Wersja Polska
 
 ### Cyfrowe Przetwarzanie Sygnałów – Analiza i Detekcja Zespołów QRS w Sygnale EKG
 
@@ -39,7 +47,7 @@ PL:
 * **Wykorzystane narzędzia:** OriginPro (analiza graficzna, dopasowanie linii bazowej), LaTeX (skład raportu).
 * **Pliki:** `[Zobacz pełny raport PDF](Analiza-spektroskopowa/BorodijukOtylia6.pdf)`
 
-ENG: 
+## English Version
 
 ### Digital Signal Processing – QRS Complex Detection in ECG Signals
 
