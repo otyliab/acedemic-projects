@@ -16,6 +16,18 @@ PL:
 * **Wykorzystane narzędzia:** MATLAB, LaTeX.
 * **Pliki:** `[Zobacz pełny raport PDF](Analiza-sygnalow/BorodijukOtyliaCPS.pdf)`
 
+### Analiza Danych Spektroskopowych – Dekonwolucja Widma Układu Wieloskładnikowego
+
+* **Opis:** Analiza jakościowa i ilościowa widm absorpcyjnych UV-Vis barwników roślinnych w złożonej matrycy biologicznej (tkanka liścia) oraz próbkach środowiskowych.
+* **Kluczowe etapy przetwarzania i analizy:**
+  * Wyznaczanie charakterystycznych parametrów spektralnych głównego pasma absorpcji (maksimum $\lambda_{max} = 684.43$ nm, intensywność $I = 82.54\%$) przy użyciu metodyki transformacji skali pikselowej na jednostki fizyczne.
+  * Wyznaczanie szerokości połówkowej pasma ($\Delta\vartheta_{1/2} = 62.69$ nm) z uwzględnieniem nachylenia linii bazowej w celu separacji tła optycznego[cite: 2].
+  * Matematyczny rozkład (dekonwolucja) zbiorczego widma absorpcyjnego na 5 składowych pasm (z wykorzystaniem profili Gaussa/Lorentza) w celu identyfikacji i separacji sygnałów chlorofilu a, chlorofilu b oraz barwników pomocniczych[cite: 2].
+  * Kwantyfikacja stężenia i masy chlorofilu a w próbkach wodnych na podstawie prawa Lamberta-Beera oraz analiza błędów metodologicznych związanych z addytywnością absorpcji i doborem długości fali pomiarowej (658 nm vs 684 nm)[cite: 2].
+* **Wyniki:** Wyznaczono średnią zawartość chlorofilu w badanej wodzie morskiej ($0.0171$ g/dm³) oraz wykazano krytyczny wpływ dekonwolucji na dokładność oznaczania składników w układach wieloskładnikowych[cite: 2].
+* **Wykorzystane narzędzia:** OriginPro (analiza graficzna, dopasowanie linii bazowej), LaTeX (skład raportu)[cite: 2].
+* **Pliki:** `[Zobacz pełny raport PDF](Analiza-spektroskopowa/adslab6.pdf)`
+
 ENG: 
 
 ### Digital Signal Processing – QRS Complex Detection in ECG Signals
@@ -29,3 +41,15 @@ ENG:
 * **Results:** Successful detection of all wave components across varying signal amplitudes, yielding a resting heart rate of 67.61 BPM.
 * **Tools Used:** MATLAB (Signal Processing Toolbox), LaTeX (report typesetting).
 * **Files:** `[View Full Report PDF](Analiza-sygnalow/BorodijukOtyliaCPS.pdf)`
+
+### Spectroscopic Data Analysis – Spectrum Deconvolution of a Multi-Component System
+
+* **Description:** Qualitative and quantitative UV-Vis spectroscopic analysis of plant pigments within a complex biological matrix (leaf tissue) and environmental water samples[cite: 2].
+* **Key Processing Stages:**
+  * Determination of core spectral parameters (spectral maximum $\lambda_{max} = 684.43$ nm, intensity $I = 82.54\%$) using pixel-to-unit scale transformation[cite: 2].
+  * Full Width at Half Maximum ($\Delta\vartheta_{1/2} = 62.69$ nm) calculation incorporating baseline slope correction to isolate background optical noise[cite: 2].
+  * Mathematical deconvolution of the bulk absorption spectrum into 5 independent sub-bands (using Gauss/Lorentz profiling) to resolve overlapping signals of chlorophyll a, chlorophyll b, and accessory pigments[cite: 2].
+  * Quantitative determination of chlorophyll a concentration using the Beer-Lambert law, followed by a methodological error analysis regarding signal additivity and optimal wavelength selection (658 nm vs. 684 nm)[cite: 2].
+* **Results:** Calculated the mean chlorophyll concentration in seawater samples ($0.0171$ g/dm³) and demonstrated the necessity of spectral deconvolution for reliable component quantification[cite: 2].
+* **Tools Used:** OriginPro (graphical analysis, baseline fitting), LaTeX (report typesetting)[cite: 2].
+* **Files:** `[View Full Report PDF](Analiza-spektroskopowa/adslab6.pdf)`
