@@ -26,7 +26,7 @@ PL:
   * Kwantyfikacja stężenia i masy chlorofilu a w próbkach wodnych na podstawie prawa Lamberta-Beera oraz analiza błędów metodologicznych związanych z addytywnością absorpcji i doborem długości fali pomiarowej (658 nm vs 684 nm).
 * **Wyniki:** Wyznaczono średnią zawartość chlorofilu w badanej wodzie morskiej ($0.0171$ g/dm³) oraz wykazano krytyczny wpływ dekonwolucji na dokładność oznaczania składników w układach wieloskładnikowych.
 * **Wykorzystane narzędzia:** OriginPro (analiza graficzna, dopasowanie linii bazowej), LaTeX (skład raportu).
-* **Pliki:** `[Zobacz pełny raport PDF](Analiza-spektroskopowa/adslab6.pdf)`
+* **Pliki:** `[Zobacz pełny raport PDF](Analiza-spektroskopowa/BorodijukOtylia6.pdf)`
 
 ENG: 
 
@@ -52,4 +52,4 @@ ENG:
   * Quantitative determination of chlorophyll a concentration using the Beer-Lambert law, followed by a methodological error analysis regarding signal additivity and optimal wavelength selection (658 nm vs. 684 nm).
 * **Results:** Calculated the mean chlorophyll concentration in seawater samples ($0.0171$ g/dm³) and demonstrated the necessity of spectral deconvolution for reliable component quantification.
 * **Tools Used:** OriginPro (graphical analysis, baseline fitting), LaTeX (report typesetting).
-* **Files:** `[View Full Report PDF](Analiza-spektroskopowa/adslab6.pdf)`
+* **Files:** `[View Full Report PDF](Analiza-spektroskopowa/BorodijukOtylia6.pdf)`
