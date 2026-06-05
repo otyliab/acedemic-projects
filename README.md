@@ -76,11 +76,11 @@ Selected technical reports and analytical scripts developed during biomedical en
 
 ### Regression Analysis and Data Approximation (OriginPro vs. MS Excel)
 
-* **Description:** A comparative analysis of linear, polynomial, and non-linear regression techniques applied to noisy experimental datasets, executed within OriginPro and Microsoft Excel[cite: 3].
+* **Description:** A comparative analysis of linear, polynomial, and non-linear regression techniques applied to noisy experimental datasets, executed within OriginPro and Microsoft Excel.
 * **Key Components:**
   * **Linear & 2nd-Order Polynomial Regression:** Curve fitting via the least squares method and evaluation of goodness-of-fit using the coefficient of determination ($R^2$).
   * **Non-Linear Model Evaluation:** Testing advanced exponential decay functions in OriginPro (e.g., single-phase `ExpDecay1` and biexponential `ExpDec2`) against Excel’s standard logarithmic trendline.
   * **Graphic Export Analysis:** Performance comparison between raster (PNG) and scalable vector (EMF) formats regarding image sharpness, pixelation resistance, and technical reporting aesthetics.
 * **Results:** Demonstrated OriginPro's superiority in handling non-linear data; the biexponential model (`ExpDec2`) yielded perfect optimization ($R^2 = 1.0$), whereas Excel’s simplified logarithmic approach limited accuracy to $R^2 = 0.98$.
 * **Tools Used:** OriginPro (Polynomial Fit, Non-linear Curve Fitting), MS Excel, LaTeX (report typesetting).
-* **Files:** `[View Full Report PDF](Metody_Regresji/BorodijukOtyliaSprawozdanie1.pdf)`
+* **Files:** `[View Full Report PDF](Metody_Regresji/BorodijukOtylia1.pdf)`
