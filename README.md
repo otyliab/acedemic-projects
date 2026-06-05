@@ -16,6 +16,17 @@ PL:
 * **Wykorzystane narzędzia:** MATLAB, LaTeX.
 * **Pliki:** `[Zobacz pełny raport PDF](Analiza-sygnalow/BorodijukOtyliaCPS.pdf)`
 
+### Analiza Regresyjna i Aproksymacja Danych Pomiarowych (OriginPro vs MS Excel)
+
+* **Opis:** Porównawcza analiza zaawansowanych metod regresji liniowej, wielomianowej oraz nieliniowej dla zbiorów danych obarczonych szumem pomiarowym, zrealizowana równolegle w środowiskach OriginPro oraz Microsoft Excel.
+* **Kluczowe etapy i zagadnienia:**
+  * **Regresja liniowa i wielomianowa II stopnia:** Wyznaczenie równań dopasowania metodą najmniejszych kwadratów i weryfikacja jakości modeli za pomocą współczynnika determinacji $R^2$.
+  * **Analiza modeli nieliniowych:** Testowanie zaawansowanych funkcji eksponencjalnych w OriginPro (m.in. jednofazowego zaniku `ExpDecay1` oraz dwufazowego `ExpDec2`) i zestawienie ich z podstawową linią trendu logarytmicznego w Excelu.
+  * **Weryfikacja formatów graficznych:** Analiza porównawcza przydatności eksportu wykresów do formatów rastrowych (PNG) oraz skalowalnych formatów wektorowych (EMF) pod kątem zachowania ostrości i estetyki dokumentacji technicznej.
+* **Wyniki:** Wykazano przewagę dedykowanych narzędzi OriginPro w analizie nieliniowej, gdzie model biexponential (`ExpDec2`) pozwolił na uzyskanie idealnego dopasowania ($R^2 = 1.0$), podczas gdy uproszczony model logarytmiczny z Excela osiągnął wynik $R^2 = 0.98$.
+* **Wykorzystane narzędzia:** OriginPro (Polynomial Fit, Non-linear Curve Fitting), MS Excel, LaTeX (skład raportu)[cite: 3].
+* **Pliki:** `[Zobacz pełny raport PDF](Analiza-Spektroskopowa/BorodijukOtylia1.pdf)`
+
 ### Analiza Danych Spektroskopowych – Dekonwolucja Widma Układu Wieloskładnikowego
 
 * **Opis:** Analiza jakościowa i ilościowa widm absorpcyjnych UV-Vis barwników roślinnych w złożonej matrycy biologicznej (tkanka liścia) oraz próbkach środowiskowych.
@@ -53,3 +64,14 @@ ENG:
 * **Results:** Calculated the mean chlorophyll concentration in seawater samples ($0.0171$ g/dm³) and demonstrated the necessity of spectral deconvolution for reliable component quantification.
 * **Tools Used:** OriginPro (graphical analysis, baseline fitting), LaTeX (report typesetting).
 * **Files:** `[View Full Report PDF](Analiza-spektroskopowa/BorodijukOtylia6.pdf)`
+
+### Regression Analysis and Data Approximation (OriginPro vs. MS Excel)
+
+* **Description:** A comparative analysis of linear, polynomial, and non-linear regression techniques applied to noisy experimental datasets, executed within OriginPro and Microsoft Excel[cite: 3].
+* **Key Components:**
+  * **Linear & 2nd-Order Polynomial Regression:** Curve fitting via the least squares method and evaluation of goodness-of-fit using the coefficient of determination ($R^2$).
+  * **Non-Linear Model Evaluation:** Testing advanced exponential decay functions in OriginPro (e.g., single-phase `ExpDecay1` and biexponential `ExpDec2`) against Excel’s standard logarithmic trendline.
+  * **Graphic Export Analysis:** Performance comparison between raster (PNG) and scalable vector (EMF) formats regarding image sharpness, pixelation resistance, and technical reporting aesthetics.
+* **Results:** Demonstrated OriginPro's superiority in handling non-linear data; the biexponential model (`ExpDec2`) yielded perfect optimization ($R^2 = 1.0$), whereas Excel’s simplified logarithmic approach limited accuracy to $R^2 = 0.98$.
+* **Tools Used:** OriginPro (Polynomial Fit, Non-linear Curve Fitting), MS Excel, LaTeX (report typesetting).
+* **Files:** `[View Full Report PDF](Metody_Regresji/BorodijukOtyliaSprawozdanie1.pdf)`
