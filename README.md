@@ -48,6 +48,24 @@ Selected technical reports and analytical scripts developed during biomedical en
 * **Wykorzystane narzędzia:** OriginPro (analiza graficzna, dopasowanie linii bazowej), LaTeX (skład raportu).
 * **Pliki:** `[Zobacz pełny raport PDF](Analiza-spektroskopowa/BorodijukOtylia6.pdf)`
 
+### Analiza Spektroskopowa FTIR – Kalibracja i Wyznaczanie Stężeń Białek (Projekt OriginPro `.opju`)
+
+* **Opis:** Projekt w środowisku OriginPro (`.opju`) zawierający kompletną ścieżkę analizy danych spektroskopowych w podczerwieni (FTIR) dla ilościowego i jakościowego oznaczania próbek białkowych z wykorzystaniem pasm amidowych (Amid I i Amid II).
+* **Zawartość pliku i metodyka zawarta w projekcie:**
+  * **Arkusz danych (Workbooks):** Zaimportowane surowe widma oscylacyjne serii pomiarowych dla roztworów wzorcowych o stężeniach 1–20 mg/ml oraz widma próbek o nieznanym stężeniu.
+  * **Przetwarzanie wstępne i ekstrakcja cech:**
+    * Wykorzystanie kursorów *Screen Reader* oraz *Data Highlighter* do manualnej lokalizacji maksimów absorpcji pasma Amidu I ($\approx 1652\text{ cm}^{-1}$) oraz Amidu II ($\approx 1546\text{ cm}^{-1}$).
+    * Automatyczna detekcja pików za pomocą algorytmu `Find Peaks` w celu eliminacji błędu subiektywnego operatora.
+  * **Zaawansowana analiza pasm (Peak Analyzer):**
+    * Definiowanie dwupunktowych linii bazowych w zakresie $1600\text{--}1700\text{ cm}^{-1}$ dla izolacji pasma Amidu I w celu odseparowania tła od właściwego sygnału.
+    * Operacje odejmowania linii bazowej (`Baseline Subtraction`) i numerycznego obliczania absorbancji integralnej (pola powierzchni pod krzywą) za pomocą modułu `Integrate Peaks`.
+  * **Modelowanie matematyczne (Linear Fitting):**
+    * Wyznaczenie liniowego modelu regresji ($y = 0.016x + 0.072$) z doskonałym dopasowaniem (współczynnik determinacji $R^2 = 0.997$), potwierdzającym liniową zależność prawa Lamberta-Beera dla pól powierzchni pasm.
+    * Słupki błędów (Error Bars) wygenerowane na podstawie obliczeń statystycznych odchylenia standardowego (SD) oraz współczynnika wariancji (CV).
+  * **Predykcja i analiza niepewności:** Wyznaczenie nieznanych stężeń próbek testowych (Próbka I: $4.72\text{ mg/ml}$, Próbka II: $7.87\text{ mg/ml}$) wraz z pełną implementacją analizy błędów metodą różniczki zupełnej w oparciu o błędy standardowe dopasowania ($\Delta a$, $\Delta b$).
+* **Narzędzia:** OriginPro (Peak Analyzer, Linear Regression, Statistics on Rows).
+* **Pliki:** `Analiza_Spektroskopowa_Bialek.opju`
+
 ## English Version
 
 ### Digital Signal Processing – QRS Complex Detection in ECG Signals
@@ -83,4 +101,22 @@ Selected technical reports and analytical scripts developed during biomedical en
   * **Graphic Export Analysis:** Performance comparison between raster (PNG) and scalable vector (EMF) formats regarding image sharpness, pixelation resistance, and technical reporting aesthetics.
 * **Results:** Demonstrated OriginPro's superiority in handling non-linear data; the biexponential model (`ExpDec2`) yielded perfect optimization ($R^2 = 1.0$), whereas Excel’s simplified logarithmic approach limited accuracy to $R^2 = 0.98$.
 * **Tools Used:** OriginPro (Polynomial Fit, Non-linear Curve Fitting), MS Excel, LaTeX (report typesetting).
-* **Files:** `[View Full Report PDF](Metody_Regresji/BorodijukOtylia1.pdf)`
+* **Files:** `[View Full Report PDF](Analiza-Spektroskopwoa/BorodijukOtylia1.pdf)`
+
+### FTIR Spectroscopic Data Analysis – Protein Calibration and Quantification (OriginPro `.opju` Project)
+
+* **Description:** A comprehensive OriginPro project (`.opju`) encompassing the entire data processing and analytical pipeline for Fourier-transform infrared (FTIR) spectroscopy spectra, focused on quantitative and qualitative analysis of protein samples via amide bands (Amide I & Amide II).
+* **Project Structure & Analytical Methods:**
+  * **Data Workbooks:** Raw oscillatory spectra imported for a calibration series of reference solutions (1–20 mg/ml) and samples with unknown concentrations.
+  * **Preprocessing & Feature Extraction:**
+    * Manual peak identification using *Screen Reader* and *Data Highlighter* tools to locate Amide I ($\approx 1652\text{ cm}^{-1}$) and Amide II ($\approx 1546\text{ cm}^{-1}$) absorption maxima.
+    * Automated peak detection executed via the `Find Peaks` algorithm to eliminate human observer bias and ensure absolute reproducibility.
+  * **Advanced Spectral Band Integration (Peak Analyzer):**
+    * Custom two-point baseline anchoring within the $1600\text{--}1700\text{ cm}^{-1}$ window to separate background optical noise from the protein-specific signal.
+    * Baseline subtraction operations and subsequent evaluation of the integrated absorbance (peak area under the curve) using the `Integrate Peaks` module.
+  * **Mathematical Calibration Modeling (Linear Fitting):**
+    * Calculation of a linear regression calibration model ($y = 0.016x + 0.072$) yielding an excellent coefficient of determination ($R^2 = 0.997$), validating the Beer-Lambert law proportionality for integrated areas.
+    * Error Bars implementation mapped from statistical descriptive indicators including Standard Deviation (SD) and Coefficient of Variation (CV).
+  * **Quantification & Error Propagation:** Exact concentration prediction for blinded test samples (Sample I: $4.72\text{ mg/ml}$, Sample II: $7.87\text{ mg/ml}$), coupled with a rigorous analytical error analysis using the total differential method derived from fit standard errors ($\Delta a$, $\Delta b$).
+* **Tools Used:** OriginPro (Peak Analyzer, Linear Regression, Statistics on Rows).
+* **Files:** `Protein_FTIR_Spectroscopy_Analysis.opju`
